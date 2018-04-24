@@ -1,0 +1,59 @@
+/* Por Defecto */
+body, h1, h2, p, ul{
+	margin: 0;
+}
+ol, ul, li{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-size: 100%;
+	font-family: 'Times New Roman', serif;
+}
+
+h1{
+	font-family: Georgia, serif;
+	font-size: 2em;
+}
+h2{
+	font-size: 1.8em;
+}
+a {
+	color: #000;
+	font-size: 1.2em;
+	text-decoration: none;
+}
+a:hover{
+	text-decoration: underline;
+}
+article{
+	overflow: hidden;
+}
+article p{
+	margin-bottom: 1em;
+}
+
+
+/* Estilos globales */
+header{
+	background-color: #E4BB0C;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+article {
+	background-color: green;
+	width: 70%;
+	float: left;
+}
+aside {
+	background-color: blue;
+	width: 30%;
+	float: left;
+}
+aside article{
+	background: none;
+}
+
+
+
