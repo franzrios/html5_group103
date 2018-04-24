@@ -1,0 +1,70 @@
+body {
+	background-color: pink;
+}
+
+#contenido1 {
+	color: pink;
+	font-size: 18px;
+}
+
+.resaltado {
+	background-color: rgba(255, 0, 0, 0.5);
+	color: blue;
+	font-size: 120%;
+}
+
+p {
+	background-color: rgb(147, 147, 34);
+}
+
+/* 
+ Este es un comentario
+ Largo
+ Multilinea
+ */
+
+.alerta{
+	background-color: yellow;
+	font-size: 150%;
+	border-width: 20px;
+	border-color: red;
+	border-style: double;
+}
+
+.advertencia, .alerta {
+	color: red;
+}
+
+.advertencia strong{
+	font-size: 200%;
+	display: block;
+}
+
+nav a{
+	color: yellow;
+}
+
+
+nav a:link{
+	color: blue;
+}
+nav a:visited{
+	color: orchid;
+}
+nav a:hover{
+	color: purple;
+}
+
+nav ul ul a{
+	color: red;
+}
+
+nav  ul li:first-child a{
+	color: thistle;
+}
+
+
+
+
+
+

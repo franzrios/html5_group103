@@ -1,0 +1,58 @@
+.propiedades-en-clase {
+	color: yellow;
+
+	background-color: red;
+	background-image: url('ruta/de-mi-archivo.jpg');
+	background-repeat: no-repeat;
+	background-position: top right;
+
+	background: #000 url(images/bg.gif) top right;
+
+	font-size: 12px;
+	font-family: Arial, Verdana, Helvetica, Tahoma, "Times New Roman", sans-serif;
+
+	font: 12px Arial, sans-serif;
+
+	border-width: 20px;
+	border-style: double;
+	border-color: red;
+
+	border: 1px double red;
+}
+
+
+/* SELECTORES: */
+div {
+	font-size: 18px;
+}
+
+/*
+Clases:
+<p class="clase-prueba">Texto</p>
+<div class="clase-prueba">Texto</div>
+*/
+
+.clase-prueba {
+	color: pink;
+}
+
+
+/*
+IDs:
+<div id="caja1">
+	<strong>Titulo</strong> <span>Prueba</span>
+</div>
+*/
+#caja1 {
+	font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+
