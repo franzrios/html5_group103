@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Positions</title>
+	<style type="text/css">
+		.box{
+			background-color: red;
+			height: 200px;
+			width: 200px;
+			float: left;
+			margin-right: 10px;
+			margin-bottom: 10px;
+		}
+		.box-g{
+			background-color: green;
+			color: #FFF;
+		}
+		.cleared{
+			clear: both;
+		}
+
+		.pstatic .box-g{
+			position: static;
+		}
+
+
+
+		.prelative .box-g{
+			position: relative;
+			padding: 200px;
+			top: 50px;
+			left: 100px;
+		}
+			.prelative .box-m{
+				height: 50px;
+				width: 50px;
+				background-color: #000;
+				position: absolute;
+				left: auto;
+				top: auto;
+				right: 0px;
+				bottom: 0;
+			}
+
+
+
+
+		.pabsolute{
+			position: relative;
+		}
+		.pabsolute .box-g{
+			position: fixed;
+			top: calc(50% - 100px);
+			left: calc(50% - 100px);
+		}
+
+	</style>
+</head>
+<body>
+	<div class="cleared pstatic">
+		<div class="box">One</div>
+		<div class="box box-g">Two</div>
+		<div class="box">Three</div>
+		<div class="box">Four</div>
+	</div>
+	<div class="cleared prelative">
+		<div class="box">One</div>
+		<div class="box box-g">
+			Two
+			<div class="box-m"></div>
+		</div>
+		<div class="box">Three</div>
+		<div class="box">Four</div>
+	</div>
+	<div class="cleared pabsolute">
+		<div class="box">One</div>
+		<div class="box box-g">Two</div>
+		<div class="box">Three</div>
+		<div class="box">Four</div>
+	</div>
+</body>
+</html>

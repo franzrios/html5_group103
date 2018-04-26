@@ -3,16 +3,43 @@
 <head>
 	<meta charset="utf-8">
 	<title></title>
+
+	<style type="text/css">
+		.contenido{
+			clear: both;
+			background-color: gold;
+		}
+		.contenido img, .fleft{
+			float: left;
+		}
+		.fleft{
+			background-color: blue;
+			float: left;
+		}
+		.fright{
+			background-color: green;
+			float: right;
+		}
+	</style>
 </head>
 <body>
 	<article style="width: 100%;">
 		<h1>Titulo de noticia</h1>
-		<div class="contenido">
-			<img src="https://picsum.photos/458/354/?image=9">
+		<div class="contenido clearfix">
+			<img style="height: 200px" src="https://picsum.photos/458/354/?image=9">
+			<div class="fright" style="width: 100px; height: 300px;">Texto Prueba</div>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 			consequat.</p>
+			<p>Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</div>
+
+		<div class="contenido">
+			<div class="fleft">Contenido Adicional Contenido Adicional</div>
+
 			<p>Duis aute irure dolor in reprehenderit in voluptate velit esse
 			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
