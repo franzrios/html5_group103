@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Ejemplo VW - VH</title>
+	<style type="text/css">
+	body{
+		font-size: 200%;
+	}
+		.caja{
+			background-color: #00BBFF;
+			width: 10vw;
+			height: 10vh;
+			margin: 1%;
+		}
+
+		.cajap{
+			width: 10%;
+			height: 10%;
+		}
+
+		.caja2{
+			background-color: gold;
+			color: blue;
+			width: 200px;
+			min-height: 200px;
+			max-height: 300px;
+			overflow-y: scroll;
+		}
+
+		article img{
+			width: 100%;
+			max-width: 458px;
+			max-height: 354px;
+		}
+
+	</style>
+</head>
+<body>
+
+	<div style="width: 600px; background-color: red;">
+		<div class="caja">Lunes</div>
+		<div class="caja">Martes</div>
+		<div class="caja">Miercoles</div>
+	</div>
+
+	<div style="width: 600px; background-color: blue;">
+		<div class="caja cajap">Jueves</div>
+		<div class="caja cajap">Viernes</div>
+		<div class="caja cajap">Sábado</div>
+	</div>
+
+	<div class="caja2">
+		Lorem ipsum dolor sit amet
+		Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	</div>
+
+
+	<article style="width: calc(100% - 50px); background-color: red;">
+		<h1>Titulo de noticia</h1>
+		<div class="contenido">
+			<img src="https://picsum.photos/458/354/?image=9">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat.</p> <p>Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</div>
+	</article>
+</body>
+</html>
