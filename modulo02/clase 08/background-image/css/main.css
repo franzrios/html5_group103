@@ -1,0 +1,21 @@
+*{
+		margin:0;
+		padding: 0;
+	}
+	.container{
+		width: 970px;
+		margin:0 auto;
+	}
+	.bloque1{
+		width: 970px;
+		height: 300px;
+		background-image: url(../img/fifa.jpg);
+		background-size: cover;
+		background-position: center;
+	
+	}
+	.title{
+		font-style: 30px;
+		color: white;
+		font-family: arial;
+	}

@@ -1,0 +1,31 @@
+.iconos{
+	width: 55px;
+	height: 55px;
+	background-image: url(../img/sprite.png);
+}
+.ico-f{
+	background-position: -55px 0px;
+}
+.ico-f:hover{
+	background-position: -55px 60px;
+}
+.ico-tw{
+	background-position: 0px 0px;
+}
+.ico-tw:hover{
+	background-position: 0px 60px;
+}
+
+.ico-g{
+	background-position: -115px 0px;
+}
+.ico-g:hover{
+	background-position: -115px 60px;
+}
+.ico-yt{
+	background-position: -285px 0px;
+}
+.ico-yt:hover{
+	background-position: -285px 60px;
+}
+

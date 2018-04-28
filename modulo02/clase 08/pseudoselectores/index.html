@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h1 class="title">Bienvenido a la clase 05</h1>
+	<article class="item-article">
+
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+	
+	</article>
+
+</body>
+</html>
+
+<style type="text/css">
+	.title{
+		font-family: arial;
+		text-align: center;
+		font-size: 45px;
+	}
+	.title:before{
+		content:"Capitulo: ";
+		color: red;
+	}
+	.title:after
+	{
+		content: ".-";
+		font-size: 30px;
+	}
+	.item-article:before{
+		/*content: "";
+		display: inline-block;
+		width: 20px;
+		height: 20px;
+		background-color: red;*/
+		content: url("icono.png");
+
+	}
+	.item-article:after{
+		content: "";
+		display: inline-block;
+		width: 20px;
+		height: 20px;
+		background-color: blue;
+	}
+	.item-article p:first-child{
+		color: orange;
+	}
+	.item-article p:last-child{
+		color: green;
+	}
+</style>
