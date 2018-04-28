@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Inline-Block</title>
+	<style type="text/css">
+
+		.inline > * {
+			color: blue;
+			display: inline;
+		}
+
+		.block > * {
+			color: red;
+			display: block;
+		}
+
+		.inline-block > * {
+			color: #00BBFF;
+			display: inline-block;
+			margin: 0;
+		}
+
+		.inline-block p{
+			color: gold;
+			width: 50vw;
+		}
+
+		.none > * {
+			display: none;
+		}
+
+	</style>
+</head>
+<body>
+
+	<div class="inline">
+		<p>Lorem ipsum dolor sit amet,</p>
+		<p>consectetur adipisicing elit,</p>
+	</div>
+
+	<div class="block">
+		<span>Lorem ipsum dolor sit amet,</span>
+		<strong>consectetur adipisicing elit,</strong>
+	</div>
+
+	<div class="inline-block">
+		<p>Lorem ipsum dolor sit amet,</p>
+		<div>consectetur adipisicing elit,</div>
+	</div>
+
+	<div class="none">
+		<p>Lorem ipsum dolor sit amet,</p>
+		<div>consectetur adipisicing elit,</div>
+	</div>
+
+</body>
+</html>

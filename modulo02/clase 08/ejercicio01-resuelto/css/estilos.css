@@ -1,0 +1,61 @@
+body{
+	margin: 0;
+	font-family: Arial, sans-serif;
+}
+
+header{
+	background-color: #000;
+	color: #FFF;
+	padding: 20px 0;
+}
+	header nav ul, header .logo{
+		margin: 0;
+	}
+
+	header .logo{
+		float: left;
+		margin-left: 25px;
+	}
+
+	header nav{
+		float: right;
+		position: relative;
+		top: 10px;
+		margin-right: 25px;
+	}
+		header nav ul li{
+			display: inline-block;
+			margin-left: 15px;
+		}
+		nav a{
+			color: #FFF;
+		}
+
+main{
+	clear: both;
+}
+
+.slider{
+	position: relative;
+	min-height: 500px;
+	width: 100%;
+	background-image: url(../img/fondo.jpg);
+	background-size: cover;
+}
+
+.slide{
+	position: absolute;
+	text-align: center;
+	color: #FFF;
+	font-size: 120%;
+
+	top: 50%;
+	left: 50%;
+
+	transform: translate(-50%, -50%);
+
+	text-shadow:0 0 10px #666;
+
+	/*box-shadow:0 10px 50px #000;*/
+}
+
