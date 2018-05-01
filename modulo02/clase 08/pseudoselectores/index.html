@@ -1,21 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="utf-8">
 	<title></title>
-</head>
-<body>
-	<h1 class="title">Bienvenido a la clase 05</h1>
-	<article class="item-article">
 
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
-	
-	</article>
-
-</body>
-</html>
-
-<style type="text/css">
+	<style type="text/css">
 	.title{
 		font-family: arial;
 		text-align: center;
@@ -30,7 +19,7 @@
 		content: ".-";
 		font-size: 30px;
 	}
-	.item-article:before{
+	.item-article::before{
 		/*content: "";
 		display: inline-block;
 		width: 20px;
@@ -39,12 +28,15 @@
 		content: url("icono.png");
 
 	}
-	.item-article:after{
+	.item-article::after{
 		content: "";
 		display: inline-block;
 		width: 20px;
 		height: 20px;
 		background-color: blue;
+	}
+	.item-article p{
+		font-size: 3rem;
 	}
 	.item-article p:first-child{
 		color: orange;
@@ -52,4 +44,58 @@
 	.item-article p:last-child{
 		color: green;
 	}
+	.item-article p:only-child{
+		color: blue;
+	}
+
+	.item-article p::first-letter{
+		font-size: larger;
+	}
+
+	.caja1{
+		background-clip: padding-box;
+		background-color: red;
+		height: 200px;
+		width: 50%;
+		padding: 50px;
+		border: 10px solid #000;
+		color: #FFF;
+		font-size: 3rem;
+		position: relative;
+	}
+	.caja1::before, .caja1::after{
+		content: " ";
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 10px;
+		width: 100%;
+		background-color: blue;
+	}
+	.caja1::after{
+		bottom: 0;
+		top: auto;
+	}
 </style>
+</head>
+<body>
+
+	<div class="caja1">Texto dentro de caja</div>
+
+	<h1 class="title">Bienvenido a la clase 05</h1>
+
+
+	<article class="item-article">
+
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+		<div>
+			<p>Texto de prueba</p>
+		</div>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+	
+	</article>
+
+</body>
+</html>

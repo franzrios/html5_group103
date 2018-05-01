@@ -1,0 +1,42 @@
+Clase 10:
+
+Pseudo Selectores
+=================
+
+- Pseudo clases: Selector el cual identifica partes del árbol de la estructura del HTML
+
+	:first-child
+	:last-child
+	:only-child
+	:nth-child(even)
+	:nth-child(odd)
+	:nth-child(3)
+
+``` EJEMPLO:
+p:first-child em {
+    color: blue;
+}
+```
+
+- Pseudo elementos: Selector el cual identifica e inserta partes del contenido de un elemento HTML
+	::before
+	::after
+	::first-letter
+	::first-line
+
+``` EJEMPLO:
+p::before {
+    content: "Texto antes del texto del elemento";
+}
+```
+
+
+CSS Sprites
+===========
+Usando background-image se puede hacer la carga directa de la misma imagen de fondo sobre varios elementos
+
+
+
+
+
+	
