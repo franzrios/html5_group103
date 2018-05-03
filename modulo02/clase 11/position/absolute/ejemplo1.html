@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<article class="item">
+	<img src="http://via.placeholder.com/300x250">
+	<h2 class="title">Lorem  </h2>
+</article>
+</body>
+</html>
+
+<style type="text/css">
+	.item{
+		width: 300px;
+		position: relative;
+	}
+	.item img{
+		vertical-align: top;
+	}
+	*{
+		padding: 0;
+		margin: 0;
+		box-sizing: border-box;
+	}
+
+	.title{
+		width: 100%;
+		opacity: 0;
+		font-family: arial;
+		font-size: 20px;
+		position: absolute;
+		left: 0px;
+		bottom: 0px;
+		background-color: rgba(0,0,0,0.5);
+		color: white;
+		padding: 10px;
+		transition: all 0.3s linear;
+
+	}
+		.item:hover .title{
+			opacity: 1;
+		}
+</style>

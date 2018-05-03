@@ -1,0 +1,66 @@
+html, body{
+	margin: 0;
+	height: 100%;
+}
+
+body > .box{
+	float: left;
+}
+
+.box{
+	color: #FFF;
+	width: 6.25rem;
+	height: 6.25rem;
+	margin-bottom: 1rem;
+	background-color: red;
+	position: relative;
+}
+
+.box1{
+	top: 1rem;
+	left: 1rem;
+}
+
+.box2{
+	background: blue;
+	top: 2rem;
+	left: 2rem;
+}
+	.box2 .hijo1{
+		background-color: lightblue;
+		position: absolute;
+		top: 5px;
+		left: 5px;
+	}
+
+.box3{
+	background-color: gold;
+	color: #333;
+	top: 3rem;
+	left: 3rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*
+.box2{
+	width: 100px;
+	height: 100px;
+	background-color: blue;	
+	position: relative;
+	top:0px;
+	left: 150px;
+}
+.box3{
+	width: 100px;
+	height: 100px;
+	background-color: green;	
+}*/
