@@ -1,0 +1,22 @@
+*{
+	box-sizing: border-box;
+}
+
+.centro, .centro section{
+	clear: both;
+}
+
+.item-category {
+	width: 360px;
+	float: left;
+}
+
+
+.bloque-noticias{
+	width: 850px;
+	float: left;
+}
+
+.item-noticia {
+	width: 370px;
+}
