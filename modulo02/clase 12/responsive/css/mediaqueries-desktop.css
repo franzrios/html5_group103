@@ -1,0 +1,23 @@
+
+/*
+Smartphone = 320px 
+Tablet = 768px (dirección = vertical (portrait))
+Notebook = 1024px (laptops y tablets horizontales (landscape))
+Desktop = 1600px (monitores 21")
+
+
+Mobile First = Diseñar enfocado en móviles
+Desktop First = Diseñar enfocado en PCs de escritorio/laptops
+
+*/
+
+.box{
+	background-color: red;
+	width: 500px;
+	height: 400px;
+	float: left;
+}
+
+.box:first-child{
+	margin-right: 10px;
+}

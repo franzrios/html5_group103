@@ -1,0 +1,25 @@
+
+/*
+Smartphone = 320px 
+Tablet = 768px (dirección = vertical (portrait))
+Notebook = 1024px (laptops y tablets horizontales (landscape))
+Desktop = 1600px (monitores 21")
+*/
+
+.box{
+	background-color: #0FF;
+}
+
+
+@media screen and (min-width: 320px)
+{
+}
+
+@media screen and (min-width: 728px)
+{
+}
+
+@media screen and (min-width: 1024px)
+{
+}
+
