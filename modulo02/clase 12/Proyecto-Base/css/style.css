@@ -4,6 +4,27 @@
 
 body{
 	font: 100% 'Roboto', sans-serif;
+	margin: 0;
+}
+
+.ui-bar-top{
+	background-color: #333;
+}
+.lista-redes{
+	float: left;
+}
+.lista-redes li{
+	display: inline-block;
+}
+.lista-contacto{
+	float: right;
+}
+.lista-contacto li{
+	display: inline-block;
+}
+
+.logo-site{
+	clear: both;
 }
 
 .centro{
