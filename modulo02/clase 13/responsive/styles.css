@@ -12,17 +12,29 @@ body{
 	float: left;
 	width: 20%;
 }
-.menuitem {
-	padding: 8px;
-	margin-top: 7px;
-	border-bottom: 1px solid #f1f1f1;
+.mostrar-mobile{
+	display: none;
 }
+.mostrar-menu{
+	border: 1px solid #333;
+	padding: 5px 4px;
+	position: absolute;
+	top: 40px;
+	right: 20px;
+}
+	.menuitem {
+		padding: 8px;
+		margin-top: 7px;
+		border-bottom: 1px solid #f1f1f1;
+	}
+
 .main {
 	float: left;
 	width: 60%;
 	padding: 0 20px;
 	overflow: hidden;
 }
+
 .right {
 	background-color: lightblue;
 	float: left;
@@ -47,4 +59,36 @@ body{
 	padding:10px;
 	margin-top:7px;
 	font-size:12px;
+}
+
+
+@media screen and (max-width: 728px){
+	.main {
+		padding: 5px;
+		width: 80%;
+	}
+	.right{
+		float: none;
+		clear: left;
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 460px){
+	.mostrar-mobile{
+		display: inline-block;
+	}
+	.menu{
+		height: 0;
+		overflow: hidden;
+	}
+	.menu.abierto{
+		height: auto;
+		overflow: visible;
+	}
+
+	.menu, .main {
+		float: none;
+		width: 100%;
+	}
 }
