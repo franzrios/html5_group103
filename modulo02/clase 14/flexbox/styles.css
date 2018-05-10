@@ -1,0 +1,36 @@
+html, body{
+	height: 100vh;
+	margin: 0;
+}
+
+.container-flex{
+	display: flex;
+	flex-direction: column;
+}
+
+.container{
+	background-color: red;
+	height: 100%;
+}
+header, main, footer{
+	width: 100%;
+	/*flex: 1 0 400px;
+	*//*flex: (grow) (shrink) (basis)*/
+}
+
+header{
+	background-color: green;
+}
+main{
+	background-color: skyblue;
+	flex: 1;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+main p{
+	width: 30%;
+}
+footer{
+	background-color: gold;
+}
