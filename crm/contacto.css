@@ -26,6 +26,36 @@ header h2{
 	padding: 20px;
 }
 
+.detalle h3{
+	text-align: left;
+	margin-bottom: 20px;
+}
+
+form{
+	width: 60%;
+}
+
+.form-item{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	margin-bottom: 10px;
+}
+
+.form-item label{
+	flex-grow: 1;
+	flex-basis: 50px;
+}
+
+.form-item input, .form-item textarea, .form-item select{
+	min-width: 200px;
+	font-size: 120%;
+}
+
+.form-item .form-element{
+	flex-basis: 80%;
+}
+
 h3, table{
 	width: 80%;
 }
