@@ -2,12 +2,8 @@
 <html>
 <head>
 	<title></title>
-</head>
-<body>
 
-<div class="box"></div>
-</body>
-</html>
+
 <style type="text/css">
 	.box{
 		width: 100px;
@@ -15,37 +11,34 @@
 		margin:30px;
 		border-radius: 50%;
 		background-color: red;
-		animation: palpitar 2s infinite;
-	}
-	@keyframes palpitar{
-		0%{
-				background-color: red;
-				transform: scale(1);
-		}
-		50%{
-			background-color: yellow;
-			transform: scale(1.5);
-		}
-		100%{
-			background-color: red;
-			transform: scale(1);
-		}
+
+		animation: palpitar 2s infinite alternate-reverse;
 	}
 
-	@-webkit-keyframes palpitar{
-		0%{
-				background-color: red;
-				transform: scale(1);
-		}
-		50%{
-			background-color: yellow;
-			transform: scale(1.5);
-		}
-		100%{
+	.box-lento{
+		animation-name: palpitar;
+		animation-duration: 500ms;
+		animation-timing-function: ease;
+		animation-direction: alternate-reverse;
+	}
+
+	@keyframes palpitar{
+		from{
 			background-color: red;
 			transform: scale(1);
+		}
+		to{
+			background-color: blue;
+			transform: scale(1.5);
 		}
 	}
 
 
 </style>
+</head>
+<body>
+
+<div class="box"></div>
+<div class="box box-lento"></div>
+</body>
+</html>

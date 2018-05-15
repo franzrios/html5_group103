@@ -9,24 +9,37 @@
         height: 100px;
         transform-origin: left top;
         background-color: red;
-        position: relative;
+
         animation-name: prueba1;
         animation-duration: 4s;
         animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+
+    .anim-prueba1 p{
+        position: absolute;
+        top: 0;
     }
 
     @keyframes prueba1 {
         from {
             background-color: red;
+            padding: 5px;
+        }
+        20% {
+            background-color: blue;
         }
         to {
             background-color: yellow;
             transform: scale(2);
+            padding: 50px;
         }
     }
     </style>
 </head>
 <body>
-    <div class="anim-prueba1"></div>
+    <div class="anim-prueba1">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+    </div>
 </body>
 </html>

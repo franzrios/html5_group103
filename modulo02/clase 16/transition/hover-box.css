@@ -18,6 +18,7 @@ html {
 
   border-radius: 50%;
   box-shadow: 0 0 0 10px rgba(169,121,85, 0.8);
+
   overflow: hidden;
   transition: all 200ms ease-out;
 }
