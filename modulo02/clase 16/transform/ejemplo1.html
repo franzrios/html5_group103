@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<div class="container">
+	<div class="caja-foto">
+		<img src="foto.jpg">
+	</div>
+	<div class="caja-foto">	
+		<img src="foto.jpg">
+		</div>
+	<div class="caja-foto">	
+		<img src="foto.jpg">
+	</div>
+</div>
+</body>
+</html>
+<style type="text/css">
+	.container
+	{
+		width: 970px;
+		margin:0 auto;
+		text-align: center;
+	}
+	.caja-foto{
+		width: 300px;
+		display: inline-block;
+		vertical-align: top;
+		margin:10px;
+		overflow: hidden;
+	}
+	.caja-foto img{
+		transition: all 0.3s linear;
+	}
+	.caja-foto:hover img{
+		transform: scale(1.2) rotate(10deg);
+	}
+</style>

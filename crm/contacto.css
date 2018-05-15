@@ -42,19 +42,21 @@ form{
 	margin-bottom: 10px;
 }
 
-.form-item label{
-	flex-grow: 1;
-	flex-basis: 50px;
-}
+	.form-item label{
+		flex-grow: 1;
+		flex-basis: 50px;
+	}
 
-.form-item input, .form-item textarea, .form-item select{
-	min-width: 200px;
-	font-size: 120%;
-}
+	.form-item input, .form-item textarea, .form-item select{
+		min-width: 200px;
+		font-size: 120%;
+	}
 
-.form-item .form-element{
-	flex-basis: 80%;
-}
+	.form-item .form-element{
+		flex-basis: 80%;
+	}
+
+	
 
 h3, table{
 	width: 80%;

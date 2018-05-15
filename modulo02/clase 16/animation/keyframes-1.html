@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Animación 1</title>
+    <style> 
+    .anim-prueba1 {
+        width: 100px;
+        height: 100px;
+        transform-origin: left top;
+        background-color: red;
+        position: relative;
+        animation-name: prueba1;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes prueba1 {
+        from {
+            background-color: red;
+        }
+        to {
+            background-color: yellow;
+            transform: scale(2);
+        }
+    }
+    </style>
+</head>
+<body>
+    <div class="anim-prueba1"></div>
+</body>
+</html>
