@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript - Comandos</title>
+</head>
+<body>
+	<form>
+		<input type="number" placeholder="Numero 1" name="entrada1">
+		<input type="number" placeholder="Numero 2" name="entrada2">
+		<button type="button" onclick="sumar()">Sumar</button>
+	</form>
+	<script type="text/javascript">
+		function sumar(){
+			var num1 = document.forms[0].entrada1.value;
+			var num2 = document.forms[0].entrada2.value;
+
+			num1 = parseInt(num1, 10);
+			num2 = parseInt(num2, 10);
+
+			alert(num1 + num2);
+		}
+	</script>
+</body>
+</html>
