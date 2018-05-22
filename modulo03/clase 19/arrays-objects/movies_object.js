@@ -18,3 +18,13 @@ var movies = {
     format: "Blu-ray"
   }
 };
+
+var titles = Object.keys(movies);
+
+for (var i = 0; i < titles.length; i++) {
+  var movie = movies[ titles[i] ];
+  console.log(titles[i]);
+  for( var l = 0; l < movie.actors.length; l++){
+    console.log(movie.actors[l]);
+  }
+}
