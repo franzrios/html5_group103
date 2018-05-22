@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript - Comandos</title>
+	<style type="text/css">
+	body{
+		font-size: 200%;
+		font-family: Arial, sans-serif;
+	}
+		form input{
+			width: 100px;
+		}
+	</style>
+</head>
+<body>
+	<form>
+		<input type="number" placeholder="Numero 1" name="entrada1">
+		<input type="number" placeholder="Numero 2" name="entrada2">
+		<button type="button" onclick="operacion('suma')">+</button>
+		<button type="button" onclick="operacion('resta')">-</button>
+		<button type="button" onclick="operacion('multiplica')">*</button>
+		<button type="button" onclick="operacion('divide')">/</button>
+		<span>=</span>
+		<span id="resultado">0</span>
+	</form>
+
+
+
+	<script type="text/javascript">
+		function operacion(operacion){
+			var num1 = document.forms[0].entrada1.value;
+			var num2 = document.forms[0].entrada2.value;
+
+			num1 = parseInt(num1, 10);
+			num2 = parseInt(num2, 10);
+
+			if(Number.isNaN(num1) && Number.isNaN(num2)){
+				return;
+			}
+
+			var resultado = 0;
+
+			if(operacion === 'suma'){
+				resultado = sumar(num1, num2);
+			}else if(operacion === 'resta'){
+				resultado = restar(num1, num2)
+			}else if(operacion === 'multiplica'){
+				resultado = multiplicar(num1, num2)
+			}else if(operacion === 'divide'){
+				resultado = dividir(num1, num2)
+			}
+
+			var objetoResultado = document.querySelector('#resultado');
+			if(objetoResultado){
+				objetoResultado.innerHTML = resultado;
+			}
+		}
+
+
+		function sumar(numeroA, numeroB){
+			return numeroA + numeroB;
+		}
+
+		function restar(numeroA, numeroB){
+			return numeroA - numeroB;
+		}
+
+		function multiplicar(numeroA, numeroB){
+			return numeroA * numeroB;
+		}
+
+		function dividir(numeroA, numeroB){
+			return numeroA / numeroB;
+		}
+
+
+	</script>
+</body>
+</html>
