@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Jquery</title>
+</head>
+<body>
+	<h1>jQuery - DOM</h1>
+	<ul>
+		<li>Beneficios:</li>
+		<li>Selectores para trabajar con el DOM</li>
+		<li>Efectos y animaciones de elementos HTML</li>
+		<li>Eventos</li>
+		<li>Carga de contenido dinámico (AJAX)</li>
+	</ul>
+
+	<script
+		type="text/javascript"
+		src="js/jquery-3.3.1.min.js"></script>
+
+	<script type="text/javascript">
+		// append(), appendTo(), before(), after();
+		// $(document).ready(function() {
+		// });
+		$(function(){
+			var $contenido = $('<div id="contenido"></div>');
+			$contenido
+				.css('color', '#FF0000')
+				.html('Contenido <strong>Primario</strong>');
+
+			// Agrega al final del body
+			$('body').append($contenido);
+
+			// Mueve el UL al final del contenido de <div id="contenido"> 
+			$('ul').appendTo('#contenido');
+
+			$('#contenido').before('<p>Contenido Antes</p>');
+			$('#contenido').after('<p>Contenido Después</p>');
+
+			$("ul").append("<li>Beneficio 1</li>");
+			$("ul li:last").after("<li>Beneficio 2</li>");
+
+		});
+	</script>
+</body>
+</html>

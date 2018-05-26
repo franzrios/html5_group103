@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Jquery</title>
+</head>
+<body>
+	<h1>jQuery - Atributos</h1>
+	<ul>
+		<li>Beneficios:</li>
+		<li>Selectores para trabajar con el DOM</li>
+		<li>Efectos y animaciones de elementos HTML</li>
+		<li>Eventos</li>
+		<li>Carga de contenido dinámico (AJAX)</li>
+	</ul>
+
+	<form>
+		<input type="text" name="nombre">
+		<input type="text" name="apellidos">
+	</form>
+
+	<script
+		type="text/javascript"
+		src="js/jquery-3.3.1.min.js"></script>
+
+	<script type="text/javascript">
+		$(function(){
+			// css(), attr(), html(), val(), addClass()
+			$('ul')
+				.css('color', '#FF0000')
+				.css('font-size', '36px');
+
+			$('ul').css({
+				'color': "#0000FF",
+				'font-size': '16px'
+			})
+
+			console.log( $('ul').css('color') );
+
+			$('form input[name="nombre"]').val("Erik");
+			$('form input[name="apellidos"]').val("Porroa Vivanco");
+
+			console.log( $('form input[name="nombre"]').val() );
+
+			$('form').attr('class', 'formulario');
+			$('form').addClass('formulario');
+			$('form').addClass('contacto');
+			$('form').addClass('form1');
+
+			$('form').removeClass('contacto');
+			// $('form').removeAttr('class');
+
+		});
+	</script>
+</body>
+</html>

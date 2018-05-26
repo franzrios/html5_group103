@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Jquery</title>
+</head>
+<body>
+	<h1>jQuery</h1>
+	<ul class="beneficios">
+		<li>Beneficios:</li>
+		<li>Selectores para trabajar con el DOM</li>
+		<li>Efectos y animaciones de elementos HTML</li>
+		<li>Eventos</li>
+		<li>Carga de contenido dinámico (AJAX)</li>
+	</ul>
+	<a target="_blank" href="http://jquery.com">Visitar jQuery.com</a>
+
+	<script
+		type="text/javascript"
+		src="js/jquery-3.3.1.min.js"></script>
+
+	<script type="text/javascript">
+		$(function(){
+			// Selector de elementos
+			var $h1 = $('h1');
+			var h1 = document.getElementsByTagName('h1');
+			var h1qs = document.querySelectorAll('h1');
+
+			// Acceder a los atributos
+			var $a = $('a');
+			$a.attr('href') // Solo lectura 
+			$a.attr('href', 'http://google.com'); // Cambiar el atributo
+
+			$a.attr({
+				href: 'http://learn.jquery.com',
+				title: 'Aprender más jQuery'
+			});
+
+			// Eventos
+			$a.click(function(event){
+				event.preventDefault();
+				console.log(event);
+			});
+
+			$a.mousemove(function(event){
+				console.log(event.screenX);
+			});
+
+			$a.on('click mousemove mouseenter mouseleave', function(event){
+				console.log(event.type);
+			});
+
+
+		});
+	</script>
+</body>
+</html>

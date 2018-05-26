@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Jquery</title>
+</head>
+<body>
+	<h1>jQuery</h1>
+	<ul>
+		<li>Beneficios:</li>
+		<li>Selectores para trabajar con el DOM</li>
+		<li>Efectos y animaciones de elementos HTML</li>
+		<li>Eventos</li>
+		<li>Carga de contenido dinámico (AJAX)</li>
+	</ul>
+
+	<script
+		type="text/javascript"
+		src="js/jquery-3.3.1.min.js"></script>
+
+	<script type="text/javascript">
+	/* Uso de la función $()
+	* Selectores CSS: 
+		$('ul')
+		$('.clase1 > li')
+		$('#identificador')
+
+	* Objetos en el DOM:
+		$(document)
+		$(window)
+
+	* Creación de HTML:
+		$("<a href='#'>Test</a>")
+	*/
+
+	// Callback onReady:
+	function onReady(event) {
+		console.log("listo");
+	} 
+	$(document).ready( onReady );
+	// ---------------------------
+
+	$(document).ready( function(){
+		console.log("listo 2");
+	} )
+	// ---------------------------
+	
+	$(function(){
+		console.log("listo 3");
+	});
+
+	</script>
+</body>
+</html>

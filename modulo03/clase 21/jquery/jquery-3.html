@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Jquery</title>
+	<style type="text/css">
+		.anim1{
+			width: 200px;
+			height: 160px;
+			background-color: gold;
+			border: 2px solid brown;
+			font-size: 1.6em;
+		}
+	</style>
+</head>
+<body>
+	<h1>jQuery - Efectos</h1>
+	<ul>
+		<li>Beneficios:</li>
+		<li>Selectores para trabajar con el DOM</li>
+		<li>Efectos y animaciones de elementos HTML</li>
+		<li>Eventos</li>
+		<li>Carga de contenido dinámico (AJAX)</li>
+	</ul>
+
+	<div class="anim1">Texto Animado</div>
+
+	<script
+		type="text/javascript"
+		src="js/jquery-3.3.1.min.js"></script>
+
+	<script type="text/javascript">
+		$(function(){
+			$('h1').fadeOut(1000, function(){
+
+				$('h1').delay(1500).fadeIn();
+
+				$('ul').slideUp();
+				$('ul').delay(500).slideDown();
+
+				$('.anim1').delay(500).hide(100);
+				$('.anim1').delay(2000).show(500);
+
+				$('.anim1').delay(3000).animate({
+					height: 500,
+					width: "+=200"
+				}, 2000);
+			});
+		});
+	</script>
+</body>
+</html>
