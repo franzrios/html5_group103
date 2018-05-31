@@ -1,0 +1,34 @@
+[
+	{
+		"nombre": "Jorge Perez",
+		"telefono": "555-1234",
+		"email": "correo@correo.com",
+		"compania": "Compañia 2",
+		"detalles": "Texto Prueba",
+		"ultimocontacto": "2018-05-30"
+	},
+	{
+		"nombre": "Pedro Leon",
+		"telefono": "333-5555",
+		"email": "pleon@correo.com",
+		"compania": "Compañia 1",
+		"detalles": "Texto Prueba 2",
+		"ultimocontacto": "2018-05-30"
+	},
+	{
+		"nombre": "William Smith",
+		"telefono": "555-642-7371",
+		"email": "william@testing.com",
+		"compania": "Compañia 1",
+		"detalles": "Texto Prueba 3",
+		"ultimocontacto": "2018-05-30"
+	},
+	{
+		"nombre": "Bob Morris",
+		"telefono": "555-999-2991",
+		"email": "bob@testing.com",
+		"compania": "Compañia 1",
+		"detalles": "Texto Prueba 4",
+		"ultimocontacto": "2018-05-30"
+	}
+]

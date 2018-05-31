@@ -11,7 +11,7 @@
 	<h2>Contactos</h2>
 </header>
 
-<div class="detalle container">
+<div style="display: none;" class="detalle container">
 	<h3>Detalle de contacto</h3>
 
 	<form method="POST" action="guardar.html">
@@ -84,7 +84,10 @@
 <div class="listado container">
 <h3>Listado de contactos</h3>
 
-<table>
+<button class="btn-nuevo">Agregar Nuevo Contacto</button>
+<hr>
+
+<table id="listado-contactos">
 	<thead>
 		<tr>
 			<th>Nombre de Contacto</th>
@@ -92,27 +95,19 @@
 			<th>Email</th>
 			<th>Nombre de compañía</th>
 			<th>Último contacto</th>
+			<th>Controles</th>
 		</tr>
 	</thead>
 	<tfoot>
 		<tr>
-			<td colspan="5">Paginador</td>
+			<td colspan="6">Paginador</td>
 		</tr>
 	</tfoot>
 	<tbody>	
 		<tr>
-			<td>William Smith</td>
-			<td>555-642-7371</td>
-			<td>william@testing.com</td>
-			<td>ACME Industries</td>
-			<td>2014-10-21</td>
-		</tr>
-		<tr>
-			<td>Bob Morris</td>
-			<td>555-999-2991</td>
-			<td>bob@testing.com</td>
-			<td>ABC Corp</td>
-			<td>2014-09-12</td>
+			<td style="text-align: center;" colspan="6">
+				No se encontraron datos
+			</td>
 		</tr>
 	</tbody>
 </table>
