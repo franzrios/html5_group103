@@ -1,0 +1,31 @@
+/*
+ * Usar el box-sizing correcto (para cambiar la lógica de como el Width y Height de un elemento es alternado)
+*/
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+
+/*
+ * Usar la clase .clearfix para arreglar el error al crear elementos flotando
+*/
+.clearfix::after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+
+/*
+ * Hacer que todas las imágenes se ajusten al padre
+*/
+
+img {
+  display: block;
+  width: 100%;
+}
