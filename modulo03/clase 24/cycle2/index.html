@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Cycle2</title>
+</head>
+<body>
+	<div class="cycle-slideshow"
+	    data-cycle-fx="scrollHorz"
+	    data-cycle-speed="200"
+	    data-cycle-prev="#prev"
+	    data-cycle-next="#next">
+	    <img src="http://malsup.github.io/images/p1.jpg">
+	    <img src="http://malsup.github.io/images/p2.jpg">
+	    <img src="http://malsup.github.io/images/p3.jpg">
+	    <img src="http://malsup.github.io/images/p4.jpg">
+	</div>
+
+	<div class="center">
+	    <a href=# id="prev">Prev</a>
+	    <a href=# id="next">Next</a>
+	</div>
+
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="js/jquery.cycle2.min.js"></script>
+	<script type="text/javascript" src="js/jquery.cycle2.carousel.min.js"></script>
+
+	<script type="text/javascript">
+		$(window).resize(function (event) {
+			console.log(event);
+		})
+	</script>
+</body>
+</html>

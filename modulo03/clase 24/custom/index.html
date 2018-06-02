@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Custom Plugin</title>
+</head>
+<body>
+
+	<div class="selector1">lorem ipsum</div>
+	<div class="selector2">lorem ipsum</div>
+	<div class="selector3">lorem ipsum</div>
+	<div class="selector4">lorem ipsum</div>
+	<div class="prueba">
+		<div class="selector1">ipsum dolor</div>
+	</div>
+	<ul>
+		<li>Uno</li>
+		<li>Dos</li>
+		<li class="selector1">Tres</li>
+		<li>Cuatro</li>
+	</ul>
+
+	<script type="text/javascript" src="../cycle2/js/jquery-3.3.1.min.js"></script>
+
+	<script type="text/javascript">
+		jQuery.fn.miFuncion = function () {
+			for(var i = 0; i < this.length; i++){
+				var $obj = $(this[i]);
+				$obj.css({
+					'color': "red",
+					'background-color': "gold"
+				});
+				$obj.text( $obj.text() + " desde Plugin" );
+			}
+		};
+
+		$('.selector100').miFuncion();
+	</script>
+</body>
+</html>
